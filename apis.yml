@@ -1,7 +1,16 @@
 aid: awst
 name: AWST
-description: AWST is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AWST is the software company behind WorkRamen, a productivity and
+  business-operations platform aimed at small and medium businesses, startups,
+  agencies, and freelancers. WorkRamen brings meeting scheduling (with Google
+  Calendar and Outlook sync, plus Google Meet and Zoom), trackable document
+  sharing, secure e-signatures, routing forms, visitor management, and
+  Stripe-based payment acceptance into a single workspace. AWST is a 500 Global
+  portfolio company. As of this enrichment pass the company operates a SaaS
+  product only — its brand domain awst.io redirects to workramen.com, and no
+  public developer API, OpenAPI specification, developer portal, or API
+  documentation surface could be found.
 url: https://raw.githubusercontent.com/api-evangelist/awst/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,32 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-note: awst.io redirects to workramen.com; AWST is the maker of the WorkRamen SaaS product. No public API surface found during enrichment.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Productivity
+- Scheduling
+- Document Management
+- Electronic Signature
+- SaaS
+- Workflow
+- Calendar
+- Small Business
+image: https://cdn.prod.website-files.com/656eaeba0be1d5284a76dd49/6644b61def38e39ae5800976_UI%20Images.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +51,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/awst-domain-security.yml
 - type: Website
-  url: https://awst.io
+  url: https://www.workramen.com
+- type: Pricing
+  url: https://www.workramen.com/newpricing
+- type: Blog
+  url: https://www.workramen.com/blogs
+- type: TermsOfService
+  url: https://www.workramen.com/terms-and-conditions
+- type: Support
+  url: https://www.workramen.com/contact
+- type: SignUp
+  url: https://app.workramen.com/signup
+- type: Login
+  url: https://app.workramen.com/auth/login
+- type: LinkedIn
+  url: https://www.linkedin.com/company/workramen/
+- type: Twitter
+  url: https://twitter.com/_WorkRamen_
+- type: YouTube
+  url: https://www.youtube.com/channel/UCK4MncKi1QQGGRs1TZF00KA
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
