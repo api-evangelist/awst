@@ -50,7 +50,7 @@ tags:
 - Company
 - Productivity
 - Scheduling
-- Document-Management
+- Document Management
 - Electronic Signature
 - Software-as-a-Service
 - Workflows
@@ -66,6 +66,7 @@ tags_raw:
 - Workflow
 - Calendar
 - Small Business
+- Document-Management
 image: https://cdn.prod.website-files.com/656eaeba0be1d5284a76dd49/6644b61def38e39ae5800976_UI%20Images.png
 apis: []
 maintainers:
